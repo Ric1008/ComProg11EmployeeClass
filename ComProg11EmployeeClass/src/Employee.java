@@ -64,6 +64,6 @@ static int plyeeNum=1 ;
             salary=salary+extramoney;
     }
     public String toString(){
-        return "\"Employee [ Salary: "+id+", name = "+firstName+lastName+", Salary = $"+salary+ " ]\"";
+        return "\"Employee [ ID: "+id+", name = "+firstName+lastName+", Salary = $"+salary+ " ]\"";
     }
 }
