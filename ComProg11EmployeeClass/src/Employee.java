@@ -4,14 +4,23 @@ private String firstName;
 private String lastName;
 private double salary;
 static int plyeeNum=1 ;
-Employee(){
+    private int percent;
+
+    Employee(){
     id=plyeeNum;
     plyeeNum++;
     firstName="Jade ";
     lastName="Doe ";
-    salary=21 ;
+    salary=652 ;
 }
 
+    Employee(String firstName, String lastName, double salary){
+        id=plyeeNum;
+        plyeeNum++;
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.salary=salary;
+    }
     public int getId() {
         return id;
     }
@@ -49,12 +58,12 @@ Employee(){
     public double getYearSalary(){
     return salary*12;
     }
-    public void raisesalary(int percent){
+    public void raisesalary(double percent){
     double decimalPercent=percent/100;
     double extramoney=salary*decimalPercent;
-            this.salary=salary+extramoney;
+            salary=salary+extramoney;
     }
     public String toString(){
-        return "\"Employee [ "+id+", name = "+firstName+lastName+", "+salary+ " ]\"";
+        return "\"Employee [ Salary: "+id+", name = "+firstName+lastName+", Salary = $"+salary+ " ]\"";
     }
 }

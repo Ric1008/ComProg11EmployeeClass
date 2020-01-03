@@ -29,5 +29,25 @@ public class Main {
         toyota.setCurrentSpeed(25);
         honda.setCurrentSpeed(20);
         System.out.println(honda.equals(toyota));
+
+        Employee Howard=new Employee();
+        Employee Jody= new Employee("Jallico ", "Harvey",1360 );
+        System.out.println(Howard.getName());
+        System.out.println(Jody.getName());
+        System.out.println(Howard.getId());
+        System.out.println(Jody.getId());
+        System.out.println(Howard.getSalary());
+        System.out.println(Jody.getSalary());
+        System.out.println(Howard.getYearSalary());
+        System.out.println(Jody.getYearSalary());
+        System.out.println(Howard);
+        System.out.println(Jody);
+        Howard.raisesalary(30);
+        Jody.raisesalary(200);
+        System.out.println(Howard.getSalary());
+        System.out.println(Howard.getYearSalary());
+        System.out.println(Jody.getSalary());
+        System.out.println(Jody.getYearSalary());
+
     }
 }
