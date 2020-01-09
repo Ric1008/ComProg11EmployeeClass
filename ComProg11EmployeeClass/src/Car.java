@@ -3,8 +3,8 @@ public class Car {
     private String colour;
     private int maxSpeed;
     private
-    int currentSpeed;
-    static int modelNumber=1;
+    private int currentSpeed;
+    private static int modelNumber=1;
     private int idNum;
     Car (){
         name="";
@@ -82,5 +82,13 @@ public class Car {
     public boolean equals(Car c){
         if (this.currentSpeed==c.currentSpeed)return true;
         else return false;
+    }
+
+    public static int getModelNumber() {
+        return modelNumber;
+    }
+
+    public static void setModelNumber(int modelNumber) {
+        Car.modelNumber = modelNumber;
     }
 }

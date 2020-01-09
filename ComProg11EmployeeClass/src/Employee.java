@@ -3,7 +3,7 @@ private int id;
 private String firstName;
 private String lastName;
 private double salary;
-static int plyeeNum=1 ;
+private static int plyeeNum=1 ;
     private int percent;
 
     Employee(){
@@ -65,5 +65,25 @@ static int plyeeNum=1 ;
     }
     public String toString(){
         return "\"Employee [ ID: "+id+", name = "+firstName+lastName+", Salary = $"+salary+ " ]\"";
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public static int getPlyeeNum() {
+        return plyeeNum;
+    }
+
+    public static void setPlyeeNum(int plyeeNum) {
+        Employee.plyeeNum = plyeeNum;
+    }
+
+    public int getPercent() {
+        return percent;
+    }
+
+    public void setPercent(int percent) {
+        this.percent = percent;
     }
 }
